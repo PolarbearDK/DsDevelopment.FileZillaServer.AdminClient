@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DsDevelopment.FileZillaServer.AdminClient/DsDevelopment.FileZillaServer.AdminClient.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DsDevelopment.FileZillaServer.AdminClient.Test/DsDevelopment.FileZillaServer.AdminClient.Test.csproj" />
+  </Folder>
+</Solution>

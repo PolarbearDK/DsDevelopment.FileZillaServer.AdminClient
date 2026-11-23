@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net10.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RootNamespace>DsDevelopment.FileZillaServer.AdminClient</RootNamespace>
+
+    <!-- The version comes from git via GitVersion.MsBuild (see GitVersion.yml). -->
+    <PackageId>DsDevelopment.FileZillaServer.AdminClient</PackageId>
+    <Authors>Philip Hoppe</Authors>
+    <Company>Danish Software Development</Company>
+    <Copyright>Copyright © Philip Hoppe, Danish Software Development 2026</Copyright>
+    <Description>Client for the administration interface of FileZilla Server 1.x. Manage users and groups programmatically. Not affiliated with the FileZilla project. For FileZilla Server 0.9.x use Miracle.FileZilla.Api.</Description>
+    <PackageTags>FileZilla FileZillaServer FTP admin administration</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/PolarbearDK/DsDevelopment.FileZillaServer.AdminClient</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PolarbearDK/DsDevelopment.FileZillaServer.AdminClient</RepositoryUrl>
+    <PackageReleaseNotes>Initial preview: TLS connection with certificate pinning, login, get/set groups and users (protocol version 70, FileZilla Server 1.12.x).</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GitVersion.MsBuild" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="DsDevelopment.FileZillaServer.AdminClient.Test" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
